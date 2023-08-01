@@ -308,9 +308,20 @@ footer {
         display: none !important;
     }
 
+    .mobile-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem;
+    }
 }
 
-
+@media only screen and (max-width: 990px) and (min-width: 767px){
+    .mobile-left{
+        justify-content: center;
+        height: 28rem;
+    }
+  }
 @media screen and (max-width: 767px) {
     .hero-home {
         width: 100%;
@@ -443,7 +454,6 @@ footer {
         font-size: 14px !important;
         padding: 7px !important;
         margin: 0 !important;
-        margin-right: 1rem !important;
     }
 
     .hero-home {
