@@ -312,16 +312,18 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: 2rem;
+        justify-content: center;
+        margin: 2rem;
     }
 }
 
-@media only screen and (max-width: 990px) and (min-width: 767px){
-    .mobile-left{
+@media only screen and (max-width: 990px) and (min-width: 767px) {
+    .mobile-left {
         justify-content: center;
         height: 28rem;
     }
-  }
+}
+
 @media screen and (max-width: 767px) {
     .hero-home {
         width: 100%;
