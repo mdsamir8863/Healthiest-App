@@ -378,9 +378,6 @@ footer {
         flex-direction: column !important;
     }
 
-    .mobile-left {
-        padding: 2rem 3rem;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -446,6 +443,7 @@ footer {
         font-size: 14px !important;
         padding: 7px !important;
         margin: 0 !important;
+        margin-right: 1rem !important;
     }
 
     .hero-home {
