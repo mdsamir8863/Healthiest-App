@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box !important;
-    /* overflow: hidden !important; */
     scroll-behavior: smooth;
 
 }
@@ -12,10 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    /* display: none; */
-    width: 5px;
-    color: red;
-    /* background-color: black; */
+    display: none;
 }
 
 
@@ -255,6 +251,67 @@ footer {
     background-color: #06022b !important;
 }
 
+.foo-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.foo-photo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+li {
+    list-style: none !important;
+}
+
+.Listitems li a {
+    text-decoration: none !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    font-weight: 600;
+}
+
+.Listitems li a:hover {
+    color: #caf4e0 !important;
+}
+
+.Listitems li {
+    padding: 5px;
+}
+
+.footerLogo-bg {
+    background-image: url(https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079e923d03463f1d7c7a1c8_footer-blob.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-position: left;
+    height: 20rem;
+    margin-left: -2rem;
+}
+
+.footerLogo-bg p {
+    cursor: pointer;
+}
+
+.footerLogo-bg p:hover {
+    cursor: pointer;
+    color: #caf4e0 !important;
+
+}
+
+
+.foo-logo {
+    width: 3rem;
+}
+
 @media only screen and (min-width: 990px) {
     .nav-btn {
         background-color: #caf4e0 !important;
@@ -315,6 +372,8 @@ footer {
         justify-content: center;
         margin: 2rem;
     }
+
+
 }
 
 @media only screen and (max-width: 990px) and (min-width: 767px) {
@@ -323,6 +382,7 @@ footer {
         height: 28rem;
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .hero-home {
@@ -389,6 +449,15 @@ footer {
     .download-container {
         display: flex;
         flex-direction: column !important;
+    }
+
+    .foo-photo-container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .footer-grid-container {
+        display: none !important;
     }
 
 }
@@ -518,6 +587,15 @@ footer {
         display: flex;
         flex-direction: column !important;
     }
+
+    .footer-grid-container {
+        display: none !important;
+    }
+
+    .mb-foo-flex {
+        display: block !important;
+    }
+
 
 }
 
