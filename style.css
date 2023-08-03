@@ -266,6 +266,9 @@ footer {
 .footer-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-self: center;
+    place-items: center;
+    margin-top: 2rem;
 }
 
 li {
@@ -287,6 +290,11 @@ li {
     padding: 5px;
 }
 
+.Listitems {
+    align-self: center;
+    place-self: center;
+}
+
 .footerLogo-bg {
     background-image: url(https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6079e923d03463f1d7c7a1c8_footer-blob.svg);
     background-repeat: no-repeat;
@@ -301,11 +309,19 @@ li {
     cursor: pointer;
 }
 
-.footerLogo-bg p:hover {
+.footerLogo-bg p:hover,
+.footer-grid-container p:hover {
     cursor: pointer;
     color: #caf4e0 !important;
 
 }
+
+.footerLogo-bg img:hover,
+.footer-grid-container img:hover {
+    cursor: pointer;
+
+}
+
 
 
 .foo-logo {
